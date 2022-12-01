@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dilanur1.github.io</title>
+    <link rel="stylesheet", href="style.css">
+    <script src="https://kit.fontawesome.com/ab66ab3cbc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div id="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p></p>
+        <h1>Hi, I am Dilanur Gider<br> from Turkey</h1>
+      </div>
+    </div>
+  </div>  
+  <!-------------------about----------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am Computer Engineer student and I am looking for part-time job or internship. I am always open to learning new information in my field, I am confident in teamwork and I believe that I can bring different visions to my teammates and workplace.</p>
+          
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming</span><br>Java, C, Python, Kotlin</li>
+              <li><span>Data Analyse</span><br>Matlab, Jupyter, Colab</li>
+              <li><span>Web Programming</span><br>HTML, CSS, JavaScript</li>
+              <li><span>Database</span><br>MySQL</li>
+
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2021-Current</span><br>Tutorship at Turkish-German University </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2015</span><br>Ahmet Erdem Anatolian High School</li>
+              <li><span>2019</span><br>Turkish-German University</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!----------services---------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-desktop"></i>
+          <h2>Dealer System-Desktop Application</h2>
+          <p>Desktop application for buying and selling white goods using JavaFX.
+           </p>
+          <a href="https://github.com/dilanur1/HaendlerSystem_190503060">learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-microchip"></i>
+          <h2>Smart Garden with RaspberryPi
+          </h2>
+          <p>The system that sends the temperature and humidity data from the garden to the user via e-mail.</p>
+          <a href="https://github.com/dilanur1/Smart-Garden-with-Raspberry-pi">learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>dilanurgider0@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-square-phone"></i>+90 531 251 25 20</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dilanur-gider-b27a23209/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/dilanur1"><i class="fa-brands fa-github"></i></a>
+            
+          </div>
+          <a href="images/CV (7).pdf" class="btn btn2">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+  </script>
+    
+</body>
+</html>
