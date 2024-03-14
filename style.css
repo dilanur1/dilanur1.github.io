@@ -155,23 +155,33 @@ span {
 .text-animation span {
     position: relative;
     font-family:'Perpetua', monospace; 
-    color: whitesmoke
+    color: whitesmoke;
+    margin-bottom: 50px;
 }
 .text-animation span::before {
+    content: "Hi, It's Dilanur";
     color: whitesmoke;
     animation: words 20s infinite;
 }
 .text-animation span::after {
+    top: 0;
     content: "";
     background-color: #424874;
     position: absolute;
-    width: calc(100% + 8px);
+    width: calc(100% + 50px);
     height: 100%;
     border-left: 3px solid whitesmoke;
-    right: -8px;
+    right: -50px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-
+@keyframes words {
+    0%{
+        content: "Hi, It's Dilanur";
+    }
+    100%{
+        content: "Hi, It's Dilanur"
+    }
+}
 @keyframes typing {
     10%,
     15%,
@@ -194,7 +204,7 @@ span {
     65%,
     80%,
     85%{
-        width: calc(100% + 8px);
+        width: calc(100% + 50px);
     }
 }
 
@@ -479,6 +489,56 @@ span {
     text-decoration: none;
 }
 
-@media only screen and (max-with:600px){
+@media(max-width:1285px) {
+    html{
+        font-size: 55%;
+    }
 
+}
+@media(max-width:991px) {
+    header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 20rem 3% 5rem;
+    }
+}
+@media(max-width:1126px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: #424874;
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid #d5cfe1;
+        border-bottom: 2px solid #d5cfe1;
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: whitesmoke;
+    }
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+
+    }
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img {
+        width: 56vw;
+    }
 }
