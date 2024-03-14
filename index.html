@@ -9,123 +9,597 @@
     <script src="https://kit.fontawesome.com/ab66ab3cbc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="header">
-    <div id="container">
-      <nav>
-        <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <a href="#home" class="logo">
+      Dilanur 
+      <span>Gider</span>
+    </a>
 
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-        </ul>
-      </nav>
-      <div class="header-text">
-        <p></p>
-        <h1>Hi, I am Dilanur Gider<br> from Turkey</h1>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1 class="text-animation" style="font-family: 'Courier', monospace;"><span> Hi, It's Dilanur</span></h1>
+      <p style="font-size: 1.8rem; margin-top: 10px;">I am a 4rd year computer engineering student and I am looking for full-time job. I have more than 1 year of experience as a part-time working student at Siemens. I am always open to learning new information in my field, I am confident in teamwork and I believe that I can bring different visions to my teammates and workplace.</p>
+
+      <div class="social-icons">
+        <a href="https://github.com/dilanur1"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linledin.com/in/dilanur-gider-b27a23209"><i class="fa-brands fa-square-github"></i></a>
+      </div>
+
+      <div class="btn-group">
+        <a href="#contact" class="btn">Contact</a>
       </div>
     </div>
-  </div>  
-  <!-------------------about----------------->
-  <div id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-2">
-          <h1 class="sub-title">About Me</h1>
-          <p>I am a final year computer engineering student at Turkish-German University. I am always open to learning new information in my field, I am confident in teamwork and I believe that I can bring different visions to my teammates and workplace.</p>
-          
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li><span>Programming</span><br>Java, C, Python, Kotlin</li>
-              <li><span>Data Analyse</span><br>Matlab, Jupyter, Colab</li>
-              <li><span>Web Programming</span><br>HTML, CSS, JavaScript</li>
-              <li><span>Database</span><br>MySQL</li>
+    <div class="home-img">
+      <img src="/images/5607777.png" alt="">
+    </div>
+  </section>
 
 
-            </ul>
-          </div>
-          <div class="tab-contents" id="experience">
-            <ul>
-              <li><span>2021-Current</span><br>Tutorship at Turkish-German University </li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li><span>2015</span><br>Ahmet Erdem Anatolian High School</li>
-              <li><span>2019</span><br>Turkish-German University</li>
-            </ul>
-          </div>
+
+  <section class="about" id="about">
+    <h2 class="heading">About Me</h2>
+
+    <div class="tab-titles" style="font-size: medium">
+      <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    </div>
+
+
+
+    <div class="tab-contents active-tab" id="education">
+      <div class="timeline-items">
+
+        <div class = "timeline-item">
+          <div class = "timeline-dot"></div>
+            <div class="timeline-date">2015-2019
+              <div class="timeline-content">
+                <p>Ahmet Erdem Anatolian High School</p>
+                <p style="margin-top: 5px; font-size: 1.8rem;">GPA: 90 / 100</p>
+              </div>
+            </div>
+        
+        </div>
+  
+        <div class = "timeline-item">
+          <div class = "timeline-dot"></div>
+            <div class="timeline-date">2019-2024
+              <div class="timeline-content">
+                <p>Turkish-German University, Bachelor of Informatics</p>
+                <p style="margin-top: 5px; font-size: 1.8rem;">GPA: 3.72 / 4</p>
+              </div>
+            </div>
         </div>
 
       </div>
     </div>
-  </div>
-  <!----------services---------->
-  <div id="services">
-    <div class="container">
-      <h1 class="sub-title">My Projects</h1>
-      <div class="services-list">
-        <div>
+
+
+    <div class="tab-contents" id="experience">
+      <div class="timeline-items">
+
+        <div class = "timeline-item">
+          <div class = "timeline-dot"></div>
+            <div class="timeline-date">2021-2022
+              <div class="timeline-content">
+                <p>Tutorship, Turkish German University</p>
+              </div>
+            </div>
+        </div>
+
+        <div class = "timeline-item">
+          <div class = "timeline-dot"></div>
+            <div class="timeline-date">2023-Current
+              <div class="timeline-content">
+                <p>Siemens</p>
+                <p style="font-size: 1.8rem; margin-bottom: 5px;">Part-time working student</p>
+                <ul>
+                  <li>Working as a part-time working student in an
+                    edge and cloud based IoT project</li>
+                  <li>Making UI improvements using Angular,
+                      Typescript, HTML, CSS, Javascript on the website
+                      created for the installation of cloud instances
+                  </li>
+                  <li>Coding in the backend services of the website
+                    using Spring Framework, Java, JavaScript</li>
+                  <li>Using testing frameworks such as Jest and
+                    Jasmin for unit testing</li>
+                  <li>Using AWS Cloud effectively for logging
+                    operations, database operations, lambda services
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div> 
+    </div>
+    
+  </section>
+
+
+
+  <section class="projects" id="projects">
+    <h3 class="heading">Projects</h3>
+    <div class="projects-container">
+
+      <div class="project-box">
+        <div class="project-info">
+          <i class="fa-brands fa-android"></i>
+          <h4>Grocery Store Application</h4>
+          <p>An android mobile application for selling grocery products
+            using Kotlin and Spring Boot</p>
+          <a href="https://github.com/dilanur1?tab=repositories" style="color: #424874;">learn more</a>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-info">
           <i class="fa-solid fa-desktop"></i>
-          <h2>Dealer System-Desktop Application</h2>
-          <p>Desktop application for buying and selling white goods using JavaFX.
-           </p>
-          <a href="https://github.com/dilanur1/HaendlerSystem_190503060">learn more</a>
+          <h4>Dealer System-Desktop Application</h4>
+          <p>Desktop application for buying and selling
+            white goods using JavaFX</p>
+          <a href="https://github.com/dilanur1/HaendlerSystem_190503060" style="color: #424874;" >learn more</a>
         </div>
-        <div>
+      </div>
+
+      <div class="project-box">
+        <div class="project-info">
           <i class="fa-solid fa-microchip"></i>
-          <h2>Smart Garden with RaspberryPi
-          </h2>
-          <p>The system that sends the temperature and humidity data from the garden to the user via e-mail.</p>
-          <a href="https://github.com/dilanur1/Smart-Garden-with-Raspberry-pi">learn more</a>
+          <h4>Smart Garden with RaspberryPi 3</h4>
+          <p>The
+            system that sends the temperature and
+            humidity data from the garden to the user
+            via e-mail</p>
+            <a href="https://github.com/dilanur1/Smart-Garden-with-Raspberry-pi" style="color: #424874;">learn more</a>
+        </div>
+      </div>
+
+    </div>
+    
+
+
+  </section>
+
+  <section class="skills" id="skills">
+    <h3 class="heading">Skills</h3>
+    <h4>Programming</h4>
+    <div class="skills-container">
+      <div class="skill-info"> 
+        <img src="images/icons/java.png" class="resize-image">
+        <div class="info">
+          <p>Java</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/java-script.png" class="resize-image">
+        <div class="info">
+          <p>JavaScript</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-angular-48.png" class="resize-image">
+        <div class="info">
+          <p>Angular</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-html-48.png" class="resize-image">
+        <div class="info">
+          <p>HTML</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-css-48.png" class="resize-image">
+        <div class="info">
+          <p>CSS</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/python.png" class="resize-image">
+        <div class="info">
+          <p>Python</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-c-48.png" class="resize-image">
+        <div class="info">
+          <p>C</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-kotlin-48.png" class="resize-image">
+        <div class="info">
+          <p>Kotlin</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-spring-boot-48.png" class="resize-image">
+        <div class="info">
+          <p>Spring Boot</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/typescript.png" class="resize-image">
+        <div class="info">
+          <p>TypeScript</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/interface.png" class="resize-image">
+        <div class="info">
+          <p>Rest API</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/Jest.png" class="resize-image">
+        <div class="info">
+          <p>Jest</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/Jasmine.png" class="resize-image">
+        <div class="info">
+          <p>Jasmine</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <div id="contact">
-    <div class="container">
+    <h4>Data Analyse</h4>
+    <div class="skills-container">
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-matlab-48.png" class="resize-image">
+        <div class="info">
+          <p>Matlab</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-google-colab-48.png" class="resize-image">
+        <div class="info">
+          <p>Colab</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4>Database</h4>
+    <div class="skills-container">
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-mysql-48.png" class="resize-image">
+        <div class="info">
+          <p>MySQL</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-postgresql-48.png" class="resize-image">
+        <div class="info">
+          <p>PostgreSQL</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>  
+     
+    <h4>Tools</h4>
+    <div class="skills-container">
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-vs-code-48.png" class="resize-image">
+        <div class="info">
+          <p>Visual Studio Code</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-webstorm-48.png" class="resize-image">
+        <div class="info">
+          <p>WebStorm</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-intellij-idea-48.png" class="resize-image">
+        <div class="info">
+          <p>IntelliJ IDEA</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/postman.svg" class="resize-image">
+        <div class="info">
+          <p>Postman</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-development-experience-through-the-native-integrations-of-azure-with-visual-studio-48.png" class="resize-image">
+        <div class="info">
+          <p>TFS</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-amazon-web-services-48.png" class="resize-image">
+        <div class="info">
+          <p>AWS Cloud</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-git-48.png" class="resize-image">
+        <div class="info">
+          <p>MySQL</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-android-studio-48.png" class="resize-image">
+        <div class="info">
+          <p>Android Studio</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-scene-builder-64.png" class="resize-image">
+        <div class="info">
+          <p>Scene Builder</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-info"> 
+        <img src="images/icons/icons8-mysql-48.png" class="resize-image">
+        <div class="info">
+          <p>MySQL</p>
+          <div class="level">
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-dot"></div>
+            <div class="level-circle"></div>
+            <div class="level-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3 class="heading">Contact</h3>
+    <div class="contact-container">
       <div class="row">
-        <div class="contact-left">
-          <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-container-left">
           <p><i class="fa-solid fa-paper-plane"></i>dilanurgider0@gmail.com</p>
           <p><i class="fa-sharp fa-solid fa-square-phone"></i>+90 531 251 25 20</p>
-          <div class="social-icons">
+          <div class="social-icons ">
             <a href="https://www.linkedin.com/in/dilanur-gider-b27a23209/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/dilanur1"><i class="fa-brands fa-github"></i></a>
             
           </div>
-          <a href="images/CV (7).pdf" class="btn btn2">Download CV</a>
+          <a href="images/Dilanur GİDER (6).pdf" class="btn btn2"><i class="fa-solid fa-download" style="margin-right: 7px;"></i>Download CV</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <script>
+        var tablinks=document.getElementsByClassName("tab-links");
 
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-      for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-
-
-
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+          for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
   </script>
-    
 </body>
+
 </html>
